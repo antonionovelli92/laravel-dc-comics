@@ -1,0 +1,43 @@
+footer{
+      
+    #dc-comics-footer{
+        background-image: url('/public/images/footer-bg.jpg');
+        background-size: cover;
+        min-height: 380px;
+        .menu-footer{
+            height: 100%;
+            display: flex;
+            .list{
+                display: flex;
+             flex-basis: 50%;
+             ul{
+                color: white;
+                list-style: none;
+                text-decoration: none;
+                margin-right: 3rem;
+                margin-top: 2rem;
+
+               
+                    li{
+                        a{
+                        text-decoration: none;
+                        color: rgb(232, 226, 226);
+                        font-weight: 200;
+                        font-size: 12px;
+                        &:hover{
+                            color: lightyellow;
+                            text-shadow: 0 0 5px white;
+                        }
+                        }
+                    h4 {
+                         color: $wht-dc;
+                     }
+                }
+             }
+            }
+            .logo{
+             flex-basis: 50%;
+            }
+        }
+    }
+}

@@ -3,5 +3,5 @@
 @section('title', 'collectibles')
 
 @section('content')
-    <h1>collectibles</h1>
+    <h1 class="text-center p-5">collectibles</h1>
 @endsection

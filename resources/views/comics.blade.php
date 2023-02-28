@@ -3,5 +3,5 @@
 @section('title', 'comics')
 
 @section('content')
-    <h1>comics</h1>
+    <h1 class="text-center p-5">comics</h1>
 @endsection

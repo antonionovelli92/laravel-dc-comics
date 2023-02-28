@@ -3,5 +3,5 @@
 @section('title', 'videos')
 
 @section('content')
-    <h1>videos</h1>
+    <h1 class="text-center p-5">videos</h1>
 @endsection
