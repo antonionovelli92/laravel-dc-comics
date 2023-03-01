@@ -3,5 +3,5 @@
 @section('title', $comic->title)
 
 @section('content')
-    <h1>{{ $comic->title }}</h1>
+    <h1 class="text-center">{{ $comic->title }}</h1>
 @endsection
