@@ -2,11 +2,24 @@
 @section('title', 'Add Comic')
 
 @section('content')
-    <div class="title-create">
+    <div class="title-create d-flex justify-content-between align-items-center">
         <h1 class="text-center p-5">Create your own comic!</h1>
+        {{-- Bottone che mi porta alla pagina index --}}
+        <div class="add-comic d-flex justify-content-center">
+            <a href="{{ route('comics.index') }}" class="btn-add my-4 btn btn-small btn-primary">
+                <div class="btn-text">
+                    <span>BACK TO COMICS!</span>
+                    <div class="btn-cloud"></div>
+                </div>
+                <div class="btn-border"></div>
+                <div class="btn-bg"></div>
+            </a>
+        </div>
     </div>
     <div class="form-create">
-        <form action="">
+        <form method="POST" action="{{ route('comics.store') }}">
+            {{-- probelma pagina 419, usare questo metodo --}}
+            @csrf
             <div class="row">
                 {{-- TITOLO --}}
                 <div class="col-6">
@@ -81,21 +94,11 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-center p-5">
+                <button type="submit" class="btn px-5 border-white btn-primary">INVIA</button>
+            </div>
         </form>
     </div>
 
-
-
-    {{-- Bottone che mi porta alla pagina index --}}
-    <div class="add-comic d-flex justify-content-center">
-        <a href="{{ route('comics.index') }}" class="btn-add my-4 btn btn-small btn-primary">
-            <div class="btn-text">
-                <span>BACK TO COMICS!</span>
-                <div class="btn-cloud"></div>
-            </div>
-            <div class="btn-border"></div>
-            <div class="btn-bg"></div>
-        </a>
-    </div>
 
 @endsection
