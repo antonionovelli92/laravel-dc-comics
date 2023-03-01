@@ -23,8 +23,17 @@
             <h1 class="text-center text-white">NON CI SONO FUMETTI A DISPOSIZIONE</h1>
         @endforelse
     </div>
+    {{-- Bottone che mi porta alla pagina create --}}
     <div class="add-comic d-flex justify-content-center">
-        <a href="{{ route('comics.create') }}" class="btn-add my-4 btn btn-small btn-primary">ADD COMIC!</a>
+        <a href="{{ route('comics.create') }}" class="btn-add my-4 btn btn-small btn-primary">
+            <div class="btn-text">
+                <span>ADD COMIC!</span>
+                <div class="btn-cloud"></div>
+            </div>
+            <div class="btn-border"></div>
+            <div class="btn-bg"></div>
+        </a>
     </div>
+
 
 @endsection
