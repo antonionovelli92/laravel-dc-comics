@@ -110,3 +110,18 @@ main{
     text-shadow: 0 0 15px black;
     text-transform: uppercase;
 }
+
+
+// estetica del file show
+.comic-show{
+    .comic{
+flex-basis: 50%;
+img{
+    height: 500px;
+    width: 500px;
+}
+    }
+    .description{
+flex-basis: 50%;
+    }
+}

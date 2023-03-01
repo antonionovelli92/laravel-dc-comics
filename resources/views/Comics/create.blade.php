@@ -16,6 +16,7 @@
             </a>
         </div>
     </div>
+    {{-- Creazione form --}}
     <div class="form-create">
         <form method="POST" action="{{ route('comics.store') }}">
             {{-- probelma pagina 419, usare questo metodo --}}
@@ -26,7 +27,7 @@
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo Comic:</label>
                         <input type="text" class="form-control" id="title" placeholder="Titolo del tuo Comic"
-                            name="title">
+                            name="title" required>
                     </div>
                 </div>
                 {{-- COPERTINA --}}
@@ -34,7 +35,7 @@
                     <div class="mb-3">
                         <label for="thumb" class="form-label">Copertina:</label>
                         <input type="url" class="form-control" id="thumb" placeholder="Copertina del tuo Comic"
-                            name="thumb">
+                            name="thumb" required>
                     </div>
                 </div>
                 {{-- DESCRIZIONE --}}
