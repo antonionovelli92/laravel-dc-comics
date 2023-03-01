@@ -13,7 +13,8 @@
         <ul>
             <li><a href="{{ route('characters') }}"
                     class="{{ request()->routeIs('characters') ? 'active' : '' }}">CHARACTERS</a></li>
-            <li><a href="{{ route('comics') }}" class="{{ request()->routeIs('comics') ? 'active' : '' }}">COMICS</a></li>
+            <li><a href="{{ route('comics.index') }}"
+                    class="{{ request()->routeIs('comics.index') ? 'active' : '' }}">COMICS</a></li>
             <li><a href="{{ route('movies') }}" class="{{ request()->routeIs('movies') ? 'active' : '' }}">MOVIES</a>
             </li>
             <li><a href="{{ route('tv') }}" class=" {{ request()->routeIs('tv') ? 'active' : '' }}">TV</a></li>
