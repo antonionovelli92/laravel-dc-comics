@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+
 @section('title', 'comics')
 
 @section('content')
@@ -21,6 +22,9 @@
         @empty
             <h1 class="text-center text-white">NON CI SONO FUMETTI A DISPOSIZIONE</h1>
         @endforelse
+    </div>
+    <div class="add-comic d-flex justify-content-center">
+        <a href="{{ route('comics.create') }}" class="btn-add my-4 btn btn-small btn-primary">ADD COMIC!</a>
     </div>
 
 @endsection

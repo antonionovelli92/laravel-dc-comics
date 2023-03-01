@@ -21,8 +21,19 @@ main{
             cursor: pointer;
         }
         }
-        h5{
+        h5:hover{
             text-shadow: 0 0 5px red;
         }
+    }
+}
+// Controllo bottone 'aggiungi fumetto'
+
+.btn-add{
+    border: 1px solid white;
+    padding: 10px 15px;
+    letter-spacing: 5px;
+    &:hover{
+    box-shadow: 0 0 5px red;
+    text-shadow: 0 0 5px red;
     }
 }
