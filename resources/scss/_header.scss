@@ -37,17 +37,19 @@ header{
             
         }
     }
-    .jumbotron{
-        background-image: url('/public/images/jumbotron.jpg');
-        background-repeat: no-repeat;
-        height: 300px;
-        background-size: cover;
-        cursor: pointer;
-        &:hover{
-            border: 20px solid #000;
-                border-radius: 20px;
+   .jumbotron {
+       background-image: url('/public/images/jumbotron.jpg');
+       background-repeat: no-repeat;
+       height: 300px;
+       background-size: cover;
         transition: all 3s ease;
-        }
-    }
+       cursor: pointer;
+
+       &:hover {
+        transition: all 3s ease;
+           border: 20px solid #000;
+           border-radius: 20px;
+       }
+   }
 
 }
