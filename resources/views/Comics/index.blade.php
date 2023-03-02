@@ -1,5 +1,10 @@
 @extends('layouts.main')
 
+@section('cdns')
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'
+        integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=='
+        crossorigin='anonymous' />
+@endsection
 
 @section('title', 'comics')
 
@@ -12,6 +17,13 @@
                     <a href="{{ route('comics.show', $comic->id) }}">
                         <h5 class="card-title mt-3">{{ $comic->title }}</h5>
                     </a>
+
+                    {{-- Bottone per modificare --}}
+                    <div class="edit-comic">
+                        <a href="{{ route('comics.edit', $comic->id) }}" class=" btn btn-small ">
+                            <span><i class="fa-regular fa-pen-to-square"></i></span>
+                        </a>
+                    </div>
 
                     {{-- <p class="card-text">Price: {{ $comic->price }}</p>
                     <p class="card-text">Series: {{ $comic->series }}</p>

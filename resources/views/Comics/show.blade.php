@@ -10,20 +10,33 @@
         </div>
         <div class="description">
             <p>
-                {{ $comic->description }}
+                {!! $comic->description !!}
             </p>
-
-            {{-- Bottone che mi porta ai comics --}}
-            <div class="add-comic d-flex justify-content-center">
-                <a href="{{ route('comics.index') }}" class="btn-add my-4 btn btn-small btn-primary">
-                    <div class="btn-text">
-                        <span>TORNA AI COMICS!</span>
-                        <div class="btn-cloud"></div>
-                    </div>
-                    <div class="btn-border"></div>
-                    <div class="btn-bg"></div>
-                </a>
+            <div class="d-flex justify-content-end">
+                {{-- Bottone per modificare --}}
+                <div class="add-comic">
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="btn-add my-4 btn btn-small btn-danger">
+                        <div class="btn-text">
+                            <span>EDIT</span>
+                            <div class="btn-cloud"></div>
+                        </div>
+                        <div class="btn-border"></div>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
+                {{-- Bottone che mi porta ai comics --}}
+                <div class="add-comic ms-3">
+                    <a href="{{ route('comics.index') }}" class="btn-add my-4 btn btn-small btn-primary">
+                        <div class="btn-text">
+                            <span>TORNA AI COMICS!</span>
+                            <div class="btn-cloud"></div>
+                        </div>
+                        <div class="btn-border"></div>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
 @endsection
